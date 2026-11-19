@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.container{
+    /* border: 1px solid rgb(215, 54, 185); */
+    min-height: 300px;
+    margin: 0 auto;
+}
+  
+.topo,
+.menu,
+.conteudo,
+.rodape {
+    border: 1px solid rgb(0, 0, 0);
+}
+  
+.topo{
+    display: flex;
+    height: 100px;
+    align-items: center;/* ALINHA NA VERTICAL QUANDO USADO FLEXBOX*/
+    justify-content: center;/*ALINHA NA HORIZONTAL QUANDO USADO O FLEXBOX*/
+    background-color: #C1E07E;
+    color: rgb(0, 0, 0);
+}
+  
+.menu{
+    background-color: #C1E07E;
+    border-bottom: 4px solid rgb(0, 0, 0); /* borda inferior*/
+}
+  /* Seletor de contexto - altera a "ul" que  está dentro do .menu*/
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+  
+.menu ul li{  
+    list-style: none; /* REMOVE O MARCADOR DA LISTA*/
+    flex-grow: 1;
+    text-align: center;/*CENTRALIZA O TEXTO*/
+}
+  
+.menu ul li a{
+    display: block; /* ocupa todo o espaço disponivel*/
+    color: #000000;
+    text-decoration: none;/*REMOVE O SUBLINHADO DO LINK*/
+}
+  
+.menu ul li a:hover{
+    background-color:#008FA1 ;
+    color: #00f7ff;
+}
+  
+  
+  
+  
+  
+  
+.rodape {
+    height: 30px;
+    background-color: #C1E07E;
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+  
+.colunaA{
+
+    flex-grow: 1;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+  
+.colunaB{
+    flex-grow: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-right: 10px;
+    align-items: center;
+}
+  
+.container {
+    width: 700px;
+}
+  
+.container div {
+    margin-bottom: 2px;
+}
+  
+.conteudo{
+    min-height: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.conteudo p{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.lado{
+    display: flex;
+}
+
+.lado div{
+    width: 50%;
+    padding: 10px;
+}
+
+.conteudo img{
+    margin: 10px;
+}
+
+.rodape {
+    height: 50px;
+}
+  
